@@ -1,10 +1,17 @@
+import Header from "./components/Header"
+import ProductList from "./components/ProductList"
+import CartSummary from "./components/CartSummary"
+
 function App() {
  
 
   return (
-    <div className='m-3'>
-      <h1 className="text-3xl ">Codecamp20</h1>
-      <button className="btn btn-primary">abc</button>
+    <div className='min-h-screen flex flex-col'>
+      <Header />
+      <div className=" flex flex-1">
+        <ProductList />
+        <CartSummary />
+      </div>
     </div>
   )
 }
